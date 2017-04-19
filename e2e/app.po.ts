@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class MahjongPage {
+export class MahjongularPage {
   navigateTo() {
     return browser.get('/');
   }

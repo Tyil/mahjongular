@@ -1,10 +1,10 @@
-import { MahjongPage } from './app.po';
+import { MahjongularPage } from './app.po';
 
-describe('mahjong App', () => {
-  let page: MahjongPage;
+describe('mahjongular App', () => {
+  let page: MahjongularPage;
 
   beforeEach(() => {
-    page = new MahjongPage();
+    page = new MahjongularPage();
   });
 
   it('should display message saying app works', () => {
