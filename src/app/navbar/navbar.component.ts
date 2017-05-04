@@ -8,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   links = [
-    { label: "Home", url: "#home" },
-    { label: "Create game", url: "#create" },
-    { label: "About", url: "#about"}
+    { label: "Home", path: "" },
+    { label: "Games", path: "games" },
   ];
 
   constructor() { }
