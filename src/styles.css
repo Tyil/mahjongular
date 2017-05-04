@@ -7,6 +7,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
 md-card {
   max-width: 80%;
   margin: 2em auto;

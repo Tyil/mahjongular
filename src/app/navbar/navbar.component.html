@@ -1,11 +1,13 @@
-<div>
-  <md-toolbar color="primary">
-    <span>{{ title }}</span>
-    <span>
-      <button md-button>All</button>
-      <button md-raised-button>Of</button>
-      <button md-raised-button color="primary">The</button>
-      <button md-raised-button color="accent">Buttons</button>
-    </span>
-  </md-toolbar>
-</div>
+<md-toolbar class="md-tall" color="primary">
+  <h1>{{title}}</h1>
+  <nav>
+    <ul>
+      <li *ngFor="let link of links">
+        <button md-button routerLink="{{link.path}}">
+          {{link.label}}
+        </button>
+      </li>
+    </ul>
+  </nav>
+</md-toolbar>
+
