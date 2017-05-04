@@ -10,7 +10,8 @@ export class NavbarComponent implements OnInit {
   title="MAHJONGULAR"
 
   links = [
-    {label: "home", url: "#home"}
+    { label: "Home", path: "" },
+    { label: "Games", path: "games" },
   ];
 
   constructor() { }
