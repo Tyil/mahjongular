@@ -1,7 +1,11 @@
-<nav>
-  <ul>
-    <li *ngFor="let link of links">
-      <a href="{{link.url}}">{{link.label}}</a>
-    </li>
-  </ul>
-</nav>
+<div>
+  <md-toolbar color="primary">
+    <span>{{ title }}</span>
+    <span>
+      <button md-button>All</button>
+      <button md-raised-button>Of</button>
+      <button md-raised-button color="primary">The</button>
+      <button md-raised-button color="accent">Buttons</button>
+    </span>
+  </md-toolbar>
+</div>
