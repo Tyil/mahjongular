@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GameslistComponent } from './gameslist/gameslist.component';
 import { HomeComponent } from './home/home.component';
+import { GamesService } from './services/games.service';
 
 const appRoutes: Routes = [
   { path: "games", component: GameslistComponent },
@@ -29,9 +30,9 @@ const appRoutes: Routes = [
     HttpModule,
     MaterialModule.forRoot(),
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [GamesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

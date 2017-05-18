@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GamesService } from '../services/games.service';
 
 @Component({
   selector: 'app-gameslist',
@@ -6,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gameslist.component.css']
 })
 export class GameslistComponent implements OnInit {
+  constructor(private gameService:GamesService){}
+
   games = [
     { id: 1, state: "open" },
     { id: 2, state: "open" },
     { id: 3, state: "started" }
   ];
-
-  constructor() { }
 
   ngOnInit() {
   }
