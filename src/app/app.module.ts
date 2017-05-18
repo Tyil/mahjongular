@@ -10,9 +10,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GameslistComponent } from './gameslist/gameslist.component';
 import { HomeComponent } from './home/home.component';
+import { GameCreateComponent } from './game-create/game-create.component';
 
 const appRoutes: Routes = [
   { path: "games", component: GameslistComponent },
+  { path: "games/create", component: GameCreateComponent },
   { path: "", component: HomeComponent },
 ];
 
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     GameslistComponent,
-    HomeComponent
+    HomeComponent,
+    GameCreateComponent
   ],
   imports: [
     BrowserModule,
