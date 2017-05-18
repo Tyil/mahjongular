@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule, Routes } from "@angular/router";
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,9 +14,9 @@ import { GameCreateComponent } from './game-create/game-create.component';
 import { GamesService } from './services/games.service';
 
 const appRoutes: Routes = [
-  { path: "games", component: GameslistComponent },
-  { path: "games/create", component: GameCreateComponent },
-  { path: "", component: HomeComponent },
+  { path: 'games', component: GameslistComponent },
+  { path: 'games/create', component: GameCreateComponent },
+  { path: '', component: HomeComponent },
 ];
 
 @NgModule({
